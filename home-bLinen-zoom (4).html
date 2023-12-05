@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zoom-first fashion</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="zoom.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="FIRST FASHION.png" class="fevicon">
+    <script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  
+<style>
+  /* Container for flexboxes */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create four equal columns */
+.column {
+  flex: 25%;
+  padding: 20px;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .zoom-container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .column {
+    flex: 50%;
+  }
+  .zoom img{
+    width: 90%;
+  }
+  .row2 .column{
+    flex: auto;
+  }
+  .row2 .buy2{
+    width: 40%;
+    padding: 0.8em;
+  }
+  .image-preview{
+    width: 90%;
+  }
+  .mylogo{
+      width: 18em;
+      height: 12em;
+    }
+
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 650px) {
+  .row {
+    flex-direction: column;
+  }
+  .mylogo{
+      width: 8em;
+      height: 10em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+  .mylogo{
+      width: 4em;
+      height: 8em;
+    }
+
+}
+
+</style>
+  </head>
+<body>
+  <a  href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+    </a>
+        <!-- Back to top button -->
+        <button
+        type="button"
+        class="btn btn-floating btn-lg"
+        id="btn-back-to-top"><span>
+        <i class="fas fa-arrow-up"></i></span>
+        </button>
+        <script>
+        //Get the button
+        let mybutton = document.getElementById("btn-back-to-top");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+        scrollFunction();
+        };
+        
+        function scrollFunction() {
+        if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+        ) {
+        mybutton.style.display = "block";
+        } else {
+        mybutton.style.display = "none";
+        }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        mybutton.addEventListener("click", backToTop);
+        
+        function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+        </script>
+        <!-- -------------back to top end--------- -->
+        
+    
+      <!-- -------------marquee--------- -->
+      <section class="enable-animation">
+        <div class="marquee">
+          <ul class="marquee__content">
+            <li>GET FREE DELIVERY OVER 100$ PURCHASE ACROSS USA</li>      
+            <li>*** </li>
+            <li>GET FREE DELIVERY OVER 100$ PURCHASE ACROSS USA</li>      
+            <li>***</li>
+            <li>GET FREE DELIVERY OVER 100$ PURCHASE ACROSS USA</li>      
+            <li>***</li>
+          </ul>
+          <ul class="marquee__content">
+            <li>GET FREE DELIVERY OVER 100$ PURCHASE ACROSS USA</li>      
+            <li>***</li>
+            <li>GET FREE DELIVERY OVER 100$ PURCHASE ACROSS USA</li>      
+            <li>***</li>
+            <li>GET FREE DELIVERY OVER 100$ PURCHASE ACROSS USA</li>      
+            <li>***</li>
+          </ul>
+        </div>
+      </section>
+<!-- -------------marquee--------- -->
+
+<!-- -------------header--------- -->
+<div class="hstack gap-3 flex-wrap" style="font-family: crete round;">
+  <div class="nav">
+      <a class="nav-link text-dark box" href="https://www.facebook.com/login/"><i class="fa-brands fa-facebook"></i></a>
+      <a class="nav-link text-dark box" href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa-brands fa-square-instagram"></i></a>
+      <a class="nav-link text-dark box" href="https://linktr.ee/blog/how-to-find-your-twitter-url/"><i class="fa-brands fa-twitter"></i></a>
+      <a class="nav-link text-dark box" href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
+      <a class="nav-link text-dark box" href="https://www.tiktok.com/login"><i class="fa-brands fa-tiktok"></i></a>
+  </div>
+  <div class="box ms-auto m-2">    <a class="nav-link active" aria-current="page" href="#">Call Us or Whatsapp:+92152683735</a>   </div>
+  <div class="vr"></div>
+  <div class="box m-2">              <a class="nav-link" target="_blank" href="register.html">Register</a>           </div>
+  <div class="vr"></div>
+  <div class="box m-2">              <a class="nav-link" target="_blank" href="sign.html">Signin</a>                  </div>
+
+  <div class="vr"></div>
+  <div class="box m-2" style="margin-right: 30px;">           
+      <li class="nav-item dropdown list-unstyled show">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            PAK
+          </a>
+          <ul class="dropdown-menu" style="    background: rgb(255,220,177);
+          background: linear-gradient(90deg, rgba(255,220,177,1) 7%, rgba(255,228,196,1) 14%, rgba(254,240,212,1) 69%, rgba(254,240,212,1) 80%, rgba(252,227,183,1) 95%);">
+            <li><a class="dropdown-item" href="#">PAK</a></li>
+            <li><a class="dropdown-item" href="#">USD</a></li>
+            <li><a class="dropdown-item" href="#">CAD</a></li>
+          </ul>
+      </li>
+  </div>
+
+  <div class="vr"></div>
+  <div class="box m-2" style="margin-right: 30px;"> 
+    <div id="google_translate_element"></div>
+
+ <script type="text/javascript">
+  function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+  }
+</script>
+          
+  </div>
+  
+  </div>
+</div>
+<!-- ------------header end--------- -->
+
+      <!-- ------------search filter-------- -->
+      <div class="hstack gap-3 flex-wrap" style="font-family: crete round;">
+        <div class="nav">
+          <a class="nav-link text-dark" href="https://www.facebook.com/login/"><i class="fa-solid fa-envelope"></i>info.firstfashion.com</a>
+        </div>
+        <div class="box mx-auto m-2">    <a class="nav-link active" aria-current="page" href="index.html"><img src="FIRST FASHION.png" alt="" class="mylogo"></a>   </div>
+      
+        <div class="box m-2">            <i class="fa fa-search search"></i> 
+          <input type="search" id="searchButton" onkeyup="myFunction()" placeholder="search"/>      </div>
+      
+          <script>
+            function myFunction() {
+              // Declare variables
+              var input, filter, ul, li, a, i, txtValue;
+              input = document.getElementById('searchButton');
+              filter = input.value.toUpperCase();
+              ul = document.getElementById("menu");
+              li = ul.getElementsByTagName('li');
+              
+            
+              // Loop through all list items, and hide those who don't match the search query
+              for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                  li[i].style.display = "";
+                } else { 
+                  li[i].style.display = "none";
+                }
+              }
+            }
+            </script>
+            
+      <script>
+          $(document).ready(function(){
+           $ ("#searchButton"). hide ();
+          $(".search").click(function(){
+          $("#searchButton").toggle();
+        });
+      });
+      </script>
+      
+      <div class="box m-2">            <a href="banner.html"><i class="fa fa-download" aria-hidden="true"></i></a>
+      </div>
+    
+
+        <div class="box m-2">                 
+          <div class="navbar-nav">
+          <a class="nav-link" href="#">
+            <span class="badge badge-pill bg-danger">1</span>
+            <span class="cart m-2"><h3><i class="fas fa-shopping-cart"></i></h3></span>
+          </a>
+          </div>
+        </div>
+      </div>
+      <!-- ------------search filter end--------- -->
+
+
+    <div class="container zoom-container row">
+<!-- zoom container start -->
+<div class="xzoom-container column">
+    <div class="zoom image-holder">
+    <img src="https://images.pexels.com/photos/4108813/pexels-photo-4108813.jpeg?auto=compress&cs=tinysrgb&w=600" id="image" 
+    xoriginal="https://images.pexels.com/photos/4108813/pexels-photo-4108813.jpeg?auto=compress&cs=tinysrgb&w=600">
+    </div>
+</div>
+<!-- zoom container end -->
+
+
+<!-- discription start -->
+<div class="discription column">
+   <h1 class="title">LADIES SUIT KOE-1950</h1>
+   <P class="des magnify" >
+       <div class="zoom image-preview">
+    <img src="https://images.pexels.com/photos/4108813/pexels-photo-4108813.jpeg?auto=compress&cs=tinysrgb&w=600" id="image-preview" 
+    xoriginal="https://images.pexels.com/photos/4108813/pexels-photo-4108813.jpeg?auto=compress&cs=tinysrgb&w=600">
+    </div>
+
+    Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aliquam vel consequatur aliquid 
+    incidunt repellat itaque magni debitis doloribus alias modi hic quidem ut rem, nulla ullam qui tempora error.elit. Maxime, magnam aperiam? Dolorum explicabo
+     molestias neque sint! Officia, neque ex nisi dolore aliquid, corrupti maxime, enim sunt delectus tempore voluptatibus dolores.</P>
+   
+   <span class="span">Rs.1,329 SAVE 30%</span>
+    <div class="row2">
+    <button class="buy2">BUY NOW</button>
+    <button class="cart2">ADD TO CART</button>
+   </div>
+</div>
+<!-- discription end -->
+    </div>
+    <script>
+        var holder = document.querySelector('.image-holder');
+var image = document.getElementById('image');
+var previewHolder = document.querySelector('.image-preview');
+var imagePreview = document.getElementById('image-preview');
+imagePreview.src = image.src;
+holder.addEventListener('mousemove', () => {
+    var magGlass = document.querySelector('.magnifiying-glass');
+    let left = event.clientX - holder.offsetLeft;
+    let top = event.clientY - holder.offsetTop;
+    let height = image.clientHeight;
+    let width = image.clientWidth;
+    let previewWidth = imagePreview.clientWidth;
+    let scaleValue = 2500 / previewWidth;
+    imagePreview.style.transform = 'scale(' + scaleValue + ')';
+    let magTop = top - 50;
+    let magLeft = left - 50;
+    if(magTop <= 0){
+      magTop = 0;
+    } 
+    if(magLeft <= 0){
+       magLeft = 0;
+    }
+    if(magLeft >= (width - 100)){
+      magLeft = width - 100;
+    }
+    if(magTop >= (height - 100)){
+       magTop = height - 100;
+    }
+    magGlass.style.top = magTop + 'px';
+    magGlass.style.left = magLeft + 'px';
+    let topPercentage = top / height * 100;
+    let leftPercentage = left / width * 100;
+    imagePreview.style.top = - (5 * magTop) + "px";
+    imagePreview.style.left = - (5 * magLeft) + "px";
+});
+holder.addEventListener('mouseenter', () => {
+    previewHolder.classList.remove('d-none');
+    let magGlass = document.createElement("DIV");
+    magGlass.className = 'magnifiying-glass';
+    holder.appendChild(magGlass);
+});
+holder.addEventListener('mouseleave', () => {
+    var magGlass = holder.querySelector('.magnifiying-glass');
+    previewHolder.classList.add('d-none');
+    magGlass.parentNode.removeChild(magGlass);
+    imagePreview.style.top = 0;
+    imagePreview.style.left = 0;
+});
+
+    </script>
+ <!-- -----------------------------footer---------------------- -->
+
+  <!-- Footer -->
+  <footer class="bg-dark text-center text-white text-capitalize">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a type="button" class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/login/" role="button"><i class="fab fa-facebook-f"></i></a>
+  
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://linktr.ee/blog/how-to-find-your-twitter-url/" role="button"><i class="fab fa-twitter"></i></a>
+  
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.google.com/account/about/?hl=en-GB" role="button"><i class="fab fa-google"></i></a>
+  
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/accounts/login/?hl=en" role="button"><i class="fab fa-instagram"></i></a>
+  
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/login" role="button"><i class="fab fa-linkedin-in"></i></a>
+  
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/login" role="button"><i class="fab fa-github"></i></a>
+      </section>
+      <!-- Section: Social media -->
+  
+      <!-- Section: Form -->
+        <form action="">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Sign up for our newsletter</strong>
+              </p>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="form5Example2" class="form-control" />
+                <label class="form-label" for="form5Example2">Email address</label>
+              </div>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-auto">
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-outline-light mb-4">
+                Subscribe
+              </button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      <!-- Section: Form -->
+  
+      <!-- Section: Text -->
+      <section class="mb-4">
+        <p>
+          We deliver high-quality services &
+  Try our fashionable design as per your desires.
+  We hope we match your class by comforting you with our designs.
+  We always stay on top so that you can be on top.
+        </p>
+      </section>
+      <!-- Section: Text -->
+  
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 f-col">
+            <h5 class="text-uppercase text-start">customer support</h5>
+  
+            <ul class="list-unstyled text-left mb-0">
+              <li>
+                <a href="faqs.html.html" class="text-white">help & faq's</a>
+              </li>
+              <li>
+                <a href="payment and delivery.html" class="text-white">payment & delivery</a>
+              </li>
+              <li>
+                <a href="product care.html" class="text-white">product care</a>
+              </li>
+              <li>
+                <a href="order now.html" class="text-white">how to order</a>
+              </li>
+              <li>
+                <a href="how to order via Kalpay.html" class="text-white">how to order via kalpay</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 f-col">
+            <h5 class="text-uppercase text-start">customer queries</h5>
+  
+            <ul class="list-unstyled mb-0 text-left">
+              <li>
+                <a href="store locator.html" class="text-white">store locator</a>
+              </li>
+              <li>
+                <a href="WholeSales Quries.html" class="text-white">wholesale queries/a>
+              </li>
+              <li>
+                <a href="privacy policy.html" class="text-white">privacy Policy</a>
+              </li>
+              <li>
+                <a href="Term & Services.html" class="text-white">terms & services</a>
+              </li>
+              <li>
+                <a href="refund-policy.html" class="text-white">refund policy</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 f-col f-col">
+            <h5 class="text-uppercase text-start">quick links</h5>
+  
+            <ul class="list-unstyled mb-0 text-left">
+              <li>
+                <a href="aboutus.html" class="text-white">about us</a>
+              </li>
+              <li>
+                <a href="contact us.html" class="text-white">contact us</a>
+              </li>
+              <li>
+                <a href="i wear first fashion.html" class="text-white">i wear first Fashion</a>
+              </li>
+              <li>
+                <a href="gift card.html" class="text-white">gift cards</a>
+              </li>
+              <li>
+                <a href="Latest Ads.html" class="text-white">latest ads</a>
+              </li>
+              <li>
+                <a href="Blogs.html" class="text-white">blogs</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 f-col">
+            <h5 class="text-uppercase text-start">get in touch</h5>
+  
+            <ul class="list-unstyled mb-0 text-left">
+              <div class="form-outline form-white mb-4">
+                <input type="text" id="formControlLg" class="form-control form-control-lg">
+                <label class="form-label" for="formControlLg" style="margin-left: 0px;">Search</label>
+              <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 48.8px;"></div><div class="form-notch-trailing"></div></div></div>
+            
+              <ul class="fa-ul" style="margin-left: 1.65em;">
+            
+              <li>
+                <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">New York, NY 10012, US</span>
+              </li>
+              <li>
+                <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">info@example.com</span>
+              </li>
+              <li>
+                <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 01 234 567 88</span>
+              </li>
+              <li>
+                <span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2">+ 01 234 567 89</span>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright:
+      <a class="text-white" href="index.html">Firstfashion.com</a>
+      <p>All rights reserved.</p>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  
+  <!-- -----------------------------footer---------------------- -->
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</body>
+</html>
