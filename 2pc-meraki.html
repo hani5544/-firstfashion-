@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2piece</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="FIRST FASHION.png" class="fevicon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </head>
+  <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    .card .container{
+        width: 100%;
+        min-height: 100vh;
+        background-color: #f7f7f7;
+      
+        padding: 0px 90px;
+    }
+    .content-section{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .content-section .card{
+        flex: 1;
+        margin: 20px 20px;
+        box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+    }
+    .content-section .card img{
+        width: 100%;
+        height: auto;
+    }
+    .content-section .card h2{
+        margin: 15px 0px;
+        font-size: 15px;
+        color: #000000;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+    .content-section .card p{
+        font-size: 16px;
+        line-height: 1.5;
+        padding:0px 10px ;
+        margin-bottom: 20px;
+        font-family: sans-serif;
+        color: red;
+        text-decoration: line-through;
+        font-weight: bold;
+    }
+   
+    .card {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; 
+    
+  }
+  
+  .card:hover {
+    transform: scale(1.05); 
+  }
+  .add-to-cart-button {
+    display: none;
+  }
+  .card:hover .add-to-cart-button {
+    display: block;
+    background-color: #ff163d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 5px;
+  }
+   .card .rating .fa{
+    color: #ffd513;
+    cursor: pointer;
+  }
+   .card .rating .fa.gray{
+    color: #ccc;
+  }
+  .center-text span{
+    color: #EE1C47;
+  }
+  .center-text h2{
+    color: #111;
+    font-size: 40px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: forte;
+  }
+  h3{
+    font-family: sans-serif;
+    font-size: 16px;
+    margin: 20px;
+  }
+  .sale-tag {
+            position:absolute;
+            
+            
+            background-color: #ff0000;
+            color: white;
+            padding: 5px 5px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        @media screen and (max-width: 768px) {
+      .card .container {
+          padding: 0px 50px; 
+      }
+  
+      .content-section .card {
+          width: 100%; 
+          margin: 20px 0; 
+      }
+  
+    
+  }
+  
+  @media screen and (max-width: 480px) {
+      .card .container {
+          padding: 0px 5px;
+      }
+  
+     
+  }
+  /* Container for flexboxes */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Create four equal columns */
+  .column {
+    flex: 25%;
+    padding: 20px;
+  }
+  
+  /* On screens that are 992px wide or less, go from four columns to two columns */
+  @media screen and (max-width: 992px) {
+    .column {
+      flex: 50%;
+    }
+    .mylogo{
+      width: 18em;
+      height: 12em;
+    }
+  }
+  
+  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .row {
+      flex-direction: column;
+    }
+    .mylogo{
+      width: 12em;
+      height: 10em;
+    }
+  }
+    
+  </style>
+  <body>
+
+  <a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+    </a>
+  
+<!-- Back to top button -->
+<button
+        type="button"
+        class="btn btn-floating btn-lg"
+        id="btn-back-to-top"><span>
+  <i class="fas fa-arrow-up"></i></span>
+</button>
+<script>
+//Get the button
+let mybutton = document.getElementById("btn-back-to-top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<!-- -------------back to top end--------- -->
+
+<!-- -------------marquee--------- -->
+    <section class="enable-animation">
+        <div class="marquee">
+          <ul class="marquee__content">
+            <li>GET FREE DELIVERY OVER 100$ PURCHASE ACROSS USA</li>      
+            <li>*** </li>
+            <li>GET FREE DELIVERY OVER 100$ PURCHASE ACROSS USA</li>      
+            <li>***</li>
+            <li>GET FREE DELIVERY OVER 100$ PURCHASE ACROSS USA</li>      
+            <li>***</li>
+          </ul>
+          <ul class="marquee__content">
+            <li>GET FREE DELIVERY OVER 100$ PURCHASE ACROSS USA</li>      
+            <li>***</li>
+            <li>GET FREE DELIVERY OVER 100$ PURCHASE ACROSS USA</li>      
+            <li>***</li>
+            <li>GET FREE DELIVERY OVER 100$ PURCHASE ACROSS USA</li>      
+            <li>***</li>
+          </ul>
+        </div>
+      </section>
+<!-- -------------marquee--------- -->
+
+    <!-- -------------header--------- -->
+    <div class="hstack flex-wrap  gap-3" style="font-family: crete round;">
+
+      <div class="nav">
+          <a class="nav-link text-dark box" href="https://www.facebook.com/login/"><i class="fa-brands fa-facebook"></i></a>
+          <a class="nav-link text-dark box" href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa-brands fa-square-instagram"></i></a>
+          <a class="nav-link text-dark box" href="https://linktr.ee/blog/how-to-find-your-twitter-url/"><i class="fa-brands fa-twitter"></i></a>
+          <a class="nav-link text-dark box" href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
+          <a class="nav-link text-dark box" href="https://www.tiktok.com/login"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+      <div class="box ms-auto m-2">    <a class="nav-link active" aria-current="page" href="#">Call Us or Whatsapp:+92152683735</a>   </div>
+      <div class="vr"></div>
+      <div class="box m-2">              <a class="nav-link" target="_blank" href="register.html" >Register</a>           </div>
+      <div class="vr"></div>
+      <div class="box m-2">              <a class="nav-link" target="_blank" href="sign.html">Signin</a>                  </div>
+    
+      <div class="vr"></div>
+      <div class="box m-2" style="margin-right: 30px;">           
+          <li class="nav-item dropdown list-unstyled show">
+              <a class="nav-link dropdown-toggle" href="#" target="_blank" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                PAK
+              </a>
+              <ul class="dropdown-menu" style="    background: rgb(255,220,177);
+              background: linear-gradient(90deg, rgba(255,220,177,1) 7%, rgba(255,228,196,1) 14%, rgba(254,240,212,1) 69%, rgba(254,240,212,1) 80%, rgba(252,227,183,1) 95%);">
+                <li><a class="dropdown-item" href="#">PAK</a></li>
+                <li><a class="dropdown-item" href="#">USD</a></li>
+                <li><a class="dropdown-item" href="#">CAD</a></li>
+              </ul>
+          </li>
+      </div>
+    
+    <div class="vr"></div>
+      <div class="box m-2" style="margin-right: 30px;"> 
+        <div id="google_translate_element"></div>
+    
+     <script type="text/javascript">
+      function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+      }
+     </script>
+              
+      </div>
+      
+    </div>
+  </div>
+    <!-- ------------header end--------- -->
+    
+    <!-- ------------search filter-------- -->
+      <div class="hstack flex-wrap  gap-3" style="font-family: crete round;">
+
+        <div class="nav">
+          <a class="nav-link text-dark" href="https://www.facebook.com/login/"><i class="fa-solid fa-envelope"></i>info.firstfashion.com</a>
+        </div>
+        <div class="box mx-auto m-2">    <a class="nav-link active" aria-current="page" href="index.html"><img src="FIRST FASHION.png" alt="" class="mylogo"></a>   </div>
+      
+        <div class="box m-2">            <i class="fa fa-search search"></i> 
+          <input type="search" id="searchButton" onkeyup="myFunction()" placeholder="search"/>      </div>
+      
+          <script>
+            function myFunction() {
+              // Declare variables
+              var input, filter, ul, li, a, i, txtValue;
+              input = document.getElementById('searchButton');
+              filter = input.value.toUpperCase();
+              ul = document.getElementById("menu");
+              li = ul.getElementsByTagName('li');
+              
+            
+              // Loop through all list items, and hide those who don't match the search query
+              for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                  li[i].style.display = "";
+                } else { 
+                  li[i].style.display = "none";
+                }
+              }
+            }
+            </script>
+            
+      <script>
+          $(document).ready(function(){
+           $ ("#searchButton"). hide ();
+          $(".search").click(function(){
+          $("#searchButton").toggle();
+        });
+      });
+      </script>
+      
+      <div class="box m-2">            <a href="banner.html"><i class="fa fa-download" aria-hidden="true"></i></a>
+      </div>
+    
+
+        <div class="box m-2">                 
+          <div class="navbar-nav">
+          <a class="nav-link" href="#">
+            <span class="badge badge-pill bg-danger">1</span>
+            <span class="cart m-2"><h3><i class="fas fa-shopping-cart"></i></h3></span>
+          </a>
+          </div>
+        </div>
+      </div>
+      <!-- ------------search filter end--------- -->
+
+<!-- -------------------------------------------megamenu------------------------------- -->
+
+<div class="container-fluid header1 d-flex justify-content-center">
+  <div class="navbar-nav">
+        <ul class="menu" id="menu">
+          <li><a href="summerarrival.html">summer new arrivals</a>
+            <ul class="submenu">
+              <li><a href="pre-winter.html">pre winter</a></li>
+
+              <li><a href="baad-e-saba.html">bad-e-saba</a></li>
+
+              <li><a href="rang-e-haya.html">rang-e-haya</a>
+                <ul class="submenu2">
+                  <li><a href="2pc-haya.html">2 pc</a></li>
+                  <li><a href="3pc-haya.html">3 pc</a></li>
+                </ul>
+              </li>
+
+              <li><a href="ainy.html">ainy</a>
+                <ul class="submenu2">
+                  <li><a href="1pc-ainy.html">1 pc</a></li>  
+                  <li><a href="2pc-ainy.html">2 pc</a></li>
+                  <li><a href="3pc-ainy.html">3 pc</a></li>
+                </ul>
+              </li>
+
+              <li><a href="meraki.html">meraki</a>
+                <ul class="submenu2">
+                  <li><a href="1pc-meraki.html">1 pc</a></li>  
+                  <li><a href="2pc-meraki.html">2 pc</a></li>
+                  <li><a href="3pc-meraki.html">3 pc</a></li>
+                </ul>
+              </li>
+
+              <li><a href="faha.html">faha</a>
+                <ul class="submenu2">
+                  <li><a href="2pc-faha.html">2 pc</a></li>
+                  <li><a href="3pc-faha.html">3 pc</a></li>
+                </ul>
+              </li>
+
+              <li><a href="monochorme.html">monochrome</a>
+                <ul class="submenu2">
+                  <li><a href="2pc-monochrome.html">2 pc</a></li>
+                  <li><a href="3pc-monochrome.html">3 pc</a></li>
+                </ul>
+
+              </li>
+              <li><a href="nureh.html">nureh</a>
+                <ul class="submenu2">
+                  <li><a href="2pc-nureh.html">2 pc</a></li>
+                </ul>
+              </li>
+
+              <li><a href="aizel.html">aizal</a>
+                <ul class="submenu2">
+                  <li><a href="2pc-aizel.html">2 pc</a></li>
+                  <li><a href="3pc-aizel.html">3 pc</a></li>
+                </ul>
+              </li>
+
+              <li><a href="dilara.html">dilara</a>
+                <ul class="submenu2">
+                  <li><a href="2pc-dilara.html">2 pc</a></li>
+                </ul>
+              </li>
+
+              <li><a href="ayman.html">ayman</a>
+                <ul class="submenu2">
+                  <li><a href="3pc-ayman.html">2 pc</a></li>
+                  <li><a href="3pc-ayman.html">3 pc</a></li>
+                </ul>
+              </li>
+              <li><a href="bedding.html">bedding</a></li>
+              <li><a href="pret-2023.html">pret-2023</a></li>
+            </ul>
+          </li>
+
+          <li class="women"><a href="women.html">women</a>
+            <ul class="submenu">
+              <li><a href="pre-winter.html">pre winter</a>
+                <ul class="submenu2">
+                  <li><a href="1pc-summer.html">summer 1piece</a></li>
+                  <li><a href="2pc-summer.html">summer 2piece</a></li>
+                  <li><a href="3pc-summer.html">summer 3piece</a></li>
+                  <li><a href="bottom.html">bottoms</a></li>
+                  <li><a href="2pc-winter.htm">winter 2piece</a></li>
+                  <li><a href="3pc-winter.html">winter 3piece</a></li>
+                  <li><a href="luxury chiffon 3pcs.html">luxury chiffon 3piece</a></li>
+                  <li><a href="digital-silk.html">digital silk</a></li>
+                </ul>
+              </li>
+
+              <li><a href="women-baad-e-saba.html">bad-e-saba</a>
+              <ul class="submenu2">
+                  <li><a href="printed kurtis.html">printed kurtis</a></li>
+                  <li><a href="Embroided kurtis.html">embroided kurtis</a></li>
+                  <li><a href="2pc-winter.htm">winter 2piece</a></li>
+                  <li><a href="luxury pret.html">luxury pret</a></li>
+                  <li><a href="fall pret.html">fall pret</a></li>
+                  <li><a href="bottom.html">bottoms</a></li>
+              </ul>
+              </li>
+            </ul>
+          </li>
+
+
+          <li><a href="Men.html">men</a>
+            <ul class="submenu">
+              <li><a href="men-unstitched.html">Men unstitched fabric</a></li>
+              <li><a href="men-shalwar-qameez.html">men shalwar qameez</a></li>
+              <li><a href="men-waist-coat.html">waist coat</a></li>
+              <li><a href="men-bottoms.html">men bottoms</a></li>
+            </ul>
+            </li>
+  
+            <li><a href="luxury pret.html">luxury pret</a></li>
+  
+            <li class="home"><a href="home.html">home</a>
+              <ul class="submenu3">
+                <div class="container">
+                  <div class="row home">
+                    <div class="col">
+                      <li><h4><a href="Bed-linen.html">bed linen</a></h4></li>
+                      <li><a href="bed-sheets.html">bed sheets</a></li>
+                      <li><a href="Quilt-Cover.html">quilt covers</a></li>
+                      <li><a href="Comforters.html">comforters</a></li>
+                      <li><a href="Bed-sets.html">bed sets</a></li>
+                      <li><a href="RTG printed Range.html">room2Go</a></li>
+                    </div>
+                    <div class="col">
+                      <li><h4><a href="bed-filling.html">bedding fillings</a></h4></li>
+                      <li><a href="Bedlinen2.html">bed linen</a></li>
+                      <li><a href="BEDDING COLLECTION.HTML">bedding collection</a></li>
+                      <li><a href="Teen & Kids.html">teen & kids</a></li>
+                      <li><a href="others.html">others</a></li>
+                    </div>
+                    <div class="col">
+                      <li><h4><a href="home-acc.html">accessories</a></h4></li>
+                      <li><a href="home-bLinen.html">bed linen</a></li>
+                      <li><a href="home-beddingColl.html">bedding collection</a></li>
+                      <li><a href="home-cutionCov.html">cution covers</a></li>
+                      <li><a href="home-towels.html">towels</a></li>
+                      <li><a href="home-towels.html">others</a></li>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+            </li>
+  
+            <li><a href="accessories.html">accessories</a>
+            <ul class="submenu">
+              <li><a href="shawls.html">shawls</a></li>
+              <li><a href="FaceMask.html">face mask</a></li>
+              <li><a href="Perfumes.html">perfumes</a></li>
+              <li><a href="beauty.html">beauty</a></li>
+            </ul>
+            </li>
+  
+            <li><a href="loungwear.html">loungewear</a></li>
+            
+  
+          <li class="sale"><a href="sale.html">sale</a>
+            <ul class="submenu3">
+              <div class="container">
+                <div class="row sale">
+                  <div class="col">
+                    <li><h4><a href="shop-by-season.html">shop by season</a></h4></li>
+                    <li><a href="summer.html">summer</a></li>
+                    <li><a href="winter.html">winter</a></li>
+                    <li><h4><a href="shop-by-season2.html">shop by season</a></h4></li>
+                    <li><a href="Waist-coat.html">waist coat</a></li>
+                    <li><a href="Men-bottom.html">men bottom</a></li>
+                  </div>
+                  <div class="col">
+                    <li><h4><a href="unstitched.html">unstitched</a></h4></li>
+                    <li><a href="1pc-unstitched.html">1 pc</a></li>
+                    <li><a href="2pc-unstitched.html">2 pc</a></li>
+                    <li><a href="3pc-unstitched.html">3 pc</a></li>
+                  </div>
+                  <div class="col">
+                    <li><h4><a href="ready to wear.html">ready to wear</a></h4></li>
+                    <li><a href="1pc-readytoweaar.html">1 pc</a></li>
+                    <li><a href="2pc-ReadyToWear.htm">2 pc</a></li>
+                    <li><a href="bottom.html">bottom</a></li>
+                  </div>
+                  <div class="col">
+                    <li><h4><a href="home&accessories.html">home & accessories</a></h4></li>
+                    <li><a href="cution-covers.html">cution covers</a></li>
+                    <li><a href="sale-bedding.html">bedding</a></li>
+                    <li><a href="kitchen.html">kitchen</a></li>
+                    <li><a href="towels.html">towels</a></li>
+                    <li><a href="bath-sets.html">bath set</a></li>
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </li>
+        </ul>
+    </div>
+  </div>
+<!-- -------------------------------------------megamenu end------------------------------ -->
+
+
+    <div class="center-text">
+        <h2>Meraki<span> 3 products</span></h2>
+    </div>
+
+      
+    <div class="card-container">
+                <div class="content-section row">
+
+            <div class="card column">
+                <span class="sale-tag">Sale</span>
+                <img src="https://www.sanoberazfar.com/images/thumbs/0006255_faiza_700.jpeg">
+                <h2>Code-03</h2>
+                <p>Rs.4,999</p><h3>Rs.7,499 SAVE 40%</h3>
+                <button class="add-to-cart-button">Add to Cart</button>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa gray fa-star" aria-hidden="true"></i>
+                    <i class="fa gray fa-star" aria-hidden="true"></i>
+                </div>
+                <a href="2pc-meraki zoom card/1.html" class="btn pdf btn-success" target="_blank" role="button">Zoom card</a>
+            </div>
+            <div class="card column">
+                <span class="sale-tag">Sale</span>
+                <img src="https://www.sanoberazfar.com/images/thumbs/0006259_anam_700.jpeg" class="d-block w-100" alt="img03">
+                <h2>Code-05</h2>
+                <p>Rs.4,999</p><h3>Rs.7,499 SAVE 30%</h3>
+                <button class="add-to-cart-button">Add to Cart</button>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa gray fa-star" aria-hidden="true"></i>
+                </div>
+                <a href="2pc-meraki zoom card/2.html" class="btn pdf btn-success" target="_blank" role="button">Zoom card</a>
+            </div>
+            <div class="card column">
+                <span class="sale-tag">Sale</span>
+                <img src="https://www.sanoberazfar.com/images/thumbs/0006265_abeer_700.jpeg" class="d-block w-100" alt="img03">
+                <h2>Code-04</h2>
+                <p>Rs.4,999</p><h3>Rs.7,499 SAVE 40%</h3>
+                <button class="add-to-cart-button">Add to Cart</button>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <a href="2pc-meraki zoom card/3.html" class="btn pdf btn-success" target="_blank" role="button">Zoom card</a>
+            </div>
+        </div>
+    
+
+
+        </div>
+   
+    </div>
+
+<!-- -----------------------------footer---------------------- -->
+
+  <!-- Footer -->
+  <footer class="bg-dark text-center text-white text-capitalize">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a type="button" class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/login/" role="button"><i class="fab fa-facebook-f"></i></a>
+  
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://linktr.ee/blog/how-to-find-your-twitter-url/" role="button"><i class="fab fa-twitter"></i></a>
+  
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.google.com/account/about/?hl=en-GB" role="button"><i class="fab fa-google"></i></a>
+  
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/accounts/login/?hl=en" role="button"><i class="fab fa-instagram"></i></a>
+  
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/login" role="button"><i class="fab fa-linkedin-in"></i></a>
+  
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/login" role="button"><i class="fab fa-github"></i></a>
+      </section>
+      <!-- Section: Social media -->
+  
+      <!-- Section: Form -->
+        <form action="">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Sign up for our newsletter</strong>
+              </p>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="form5Example2" class="form-control" />
+                <label class="form-label" for="form5Example2">Email address</label>
+              </div>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-auto">
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-outline-light mb-4">
+                Subscribe
+              </button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      <!-- Section: Form -->
+  
+      <!-- Section: Text -->
+      <section class="mb-4">
+        <p>
+          We deliver high-quality services &
+  Try our fashionable design as per your desires.
+  We hope we match your class by comforting you with our designs.
+  We always stay on top so that you can be on top.
+        </p>
+      </section>
+      <!-- Section: Text -->
+  
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 f-col">
+            <h5 class="text-uppercase text-start">customer support</h5>
+  
+            <ul class="list-unstyled text-left mb-0">
+              <li>
+                <a href="faqs.html.html" class="text-white">help & faq's</a>
+              </li>
+              <li>
+                <a href="payment and delivery.html" class="text-white">payment & delivery</a>
+              </li>
+              <li>
+                <a href="product care.html" class="text-white">product care</a>
+              </li>
+              <li>
+                <a href="order now.html" class="text-white">how to order</a>
+              </li>
+              <li>
+                <a href="how to order via Kalpay.html" class="text-white">how to order via kalpay</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 f-col">
+            <h5 class="text-uppercase text-start">customer queries</h5>
+  
+            <ul class="list-unstyled mb-0 text-left">
+              <li>
+                <a href="store locator.html" class="text-white">store locator</a>
+              </li>
+              <li>
+                <a href="WholeSales Quries.html" class="text-white">wholesale queries/a>
+              </li>
+              <li>
+                <a href="privacy policy.html" class="text-white">privacy Policy</a>
+              </li>
+              <li>
+                <a href="Term & Services.html" class="text-white">terms & services</a>
+              </li>
+              <li>
+                <a href="refund-policy.html" class="text-white">refund policy</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 f-col f-col">
+            <h5 class="text-uppercase text-start">quick links</h5>
+  
+            <ul class="list-unstyled mb-0 text-left">
+              <li>
+                <a href="aboutus.html" class="text-white">about us</a>
+              </li>
+              <li>
+                <a href="contact us.html" class="text-white">contact us</a>
+              </li>
+              <li>
+                <a href="i wear first fashion.html" class="text-white">i wear first Fashion</a>
+              </li>
+              <li>
+                <a href="gift card.html" class="text-white">gift cards</a>
+              </li>
+              <li>
+                <a href="Latest Ads.html" class="text-white">latest ads</a>
+              </li>
+              <li>
+                <a href="Blogs.html" class="text-white">blogs</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 f-col">
+            <h5 class="text-uppercase text-start">get in touch</h5>
+  
+            <ul class="list-unstyled mb-0 text-left">
+              <div class="form-outline form-white mb-4">
+                <input type="text" id="formControlLg" class="form-control form-control-lg">
+                <label class="form-label" for="formControlLg" style="margin-left: 0px;">Search</label>
+              <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 48.8px;"></div><div class="form-notch-trailing"></div></div></div>
+            
+              <ul class="fa-ul" style="margin-left: 1.65em;">
+            
+              <li>
+                <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">New York, NY 10012, US</span>
+              </li>
+              <li>
+                <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">info@example.com</span>
+              </li>
+              <li>
+                <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 01 234 567 88</span>
+              </li>
+              <li>
+                <span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2">+ 01 234 567 89</span>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright:
+      <a class="text-white" href="index.html">Firstfashion.com</a>
+      <p>All rights reserved.</p>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  
+  <!-- -----------------------------footer---------------------- -->
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  
+    
+</body>
+</html>
